@@ -1,0 +1,4 @@
+[INFO ] 2022-06-11 14:56:44,135 BaseClass.user_is_on_dietician_website() - User is on dietician website
+[INFO ] 2022-06-11 14:56:44,187 BaseClass.user_is_on_sign_in_page() - Verify signin page header
+[INFO ] 2022-06-11 14:56:44,187 BaseClass.verifyPageTitleAndHeader() - User Signin failed
+[INFO ] 2022-06-11 14:56:44,188 BaseClass.user_should_see_all_mandatory_flields_with_star_symbol_on_top_of_those_fields() - Verify Mandatory fields
