@@ -30,6 +30,12 @@ public class ReadConfig {
 		return prop.getProperty("browser");
 	}
 
+	public String getDieticianHomeUrl() {
+		return prop.getProperty("dieticianurl");
+	}
 
+	public String getAddNewPatientUrl() {
+		return prop.getProperty("addnewpatienturl");
+	}
 
 }

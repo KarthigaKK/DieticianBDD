@@ -1,4 +1,57 @@
-[INFO ] 2022-06-11 14:56:44,135 BaseClass.user_is_on_dietician_website() - User is on dietician website
-[INFO ] 2022-06-11 14:56:44,187 BaseClass.user_is_on_sign_in_page() - Verify signin page header
-[INFO ] 2022-06-11 14:56:44,187 BaseClass.verifyPageTitleAndHeader() - User Signin failed
-[INFO ] 2022-06-11 14:56:44,188 BaseClass.user_should_see_all_mandatory_flields_with_star_symbol_on_top_of_those_fields() - Verify Mandatory fields
+[INFO ] 2022-06-12 22:48:09,347 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:09,359 BaseClass.user_wants_to_enter_new_patient_details() - User wants to enter patient details
+[INFO ] 2022-06-12 22:48:09,359 BaseClass.patient_data_from_is_visible() - Patient form header is visible
+[INFO ] 2022-06-12 22:48:09,388 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:09,390 BaseClass.user_attempts_to_submit_the_form_without_filling_up_mandatory_fields_from_sheetname() - User fill the form without entering mandatory fields
+[INFO ] 2022-06-12 22:48:10,319 BaseClass.unable_to_update_and_display_error_message() - Please fillup all the mandatory fields
+[INFO ] 2022-06-12 22:48:10,342 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:10,344 BaseClass.user_attempts_to_put_numeric_value_in_full_name_field_from_sheetname() - User enters numeric value in full name field
+[INFO ] 2022-06-12 22:48:10,490 BaseClass.unable_to_enter_and_show_error_message() - Only characters are allowed
+[INFO ] 2022-06-12 22:48:10,508 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:10,509 BaseClass.user_does_not_put_space_in_between_first_name_and_last_name_for_full_name_field_from_sheetname() - User enters full name without space
+[INFO ] 2022-06-12 22:48:10,623 BaseClass.unable_to_enter_and_show_error_message() - First and Last Name should have space in between
+[INFO ] 2022-06-12 22:48:10,641 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:10,643 BaseClass.user_attempts_to_submit_the_form_without_filling_up_full_name_field_from_sheetname() - User leaves full name as empty
+[INFO ] 2022-06-12 22:48:10,751 BaseClass.unable_to_enter_and_show_error_message() - Please enter Full Name
+[INFO ] 2022-06-12 22:48:10,767 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:10,768 BaseClass.user_does_not_enter_any_value_in_addess_linel_field_from_sheetname() - User leaves Addess line l as empty
+[INFO ] 2022-06-12 22:48:10,875 BaseClass.unable_to_enter_and_show_error_message() - Please enter Addess line 1
+[INFO ] 2022-06-12 22:48:10,891 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:10,893 BaseClass.user_submit_the_form_without_selecting_any_value_for_country_field_from_sheetname() - User leaves country field as empty
+[INFO ] 2022-06-12 22:48:10,995 BaseClass.unable_to_enter_and_show_error_message() - Please select Country from dropdown
+[INFO ] 2022-06-12 22:48:11,011 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,012 BaseClass.user_attempts_to_put_numeric_value_in_city_field_from_sheetname() - User enters numeric value in city field
+[INFO ] 2022-06-12 22:48:11,099 BaseClass.unable_to_enter_and_show_error_message() - Only characters are allowed
+[INFO ] 2022-06-12 22:48:11,117 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,118 BaseClass.user_attempts_to_submit_the_form_without_filling_up_city_field_from_sheetname() - User leaves city as empty
+[INFO ] 2022-06-12 22:48:11,206 BaseClass.unable_to_enter_and_show_error_message() - Please enter City
+[INFO ] 2022-06-12 22:48:11,219 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,220 BaseClass.user_attempts_to_put_numeric_value_in_state_province_or_region_field_from_sheetname() - User enters numeric value in State field
+[INFO ] 2022-06-12 22:48:11,303 BaseClass.unable_to_enter_and_show_error_message() - Only characters are allowed
+[INFO ] 2022-06-12 22:48:11,315 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,317 BaseClass.user_attempts_to_submit_the_form_without_filling_up_state_province_or_region_field_from_sheetname() - User leaves state as empty
+[INFO ] 2022-06-12 22:48:11,403 BaseClass.unable_to_enter_and_show_error_message() - Please enter State, province or region
+[INFO ] 2022-06-12 22:48:11,417 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,417 BaseClass.user_attempts_to_submit_the_form_without_filling_up_postal_code_field_from_sheetname() - User leaves postal code as empty
+[INFO ] 2022-06-12 22:48:11,490 BaseClass.unable_to_enter_and_show_error_message() - Please enter Postal code
+[INFO ] 2022-06-12 22:48:11,500 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,500 BaseClass.user_entered_not_supported_data_format_in_postal_code_field_from_sheetname() - User enters string in postal code
+[INFO ] 2022-06-12 22:48:11,578 BaseClass.unable_to_enter_and_show_error_message() - Invalid Postal code format
+[INFO ] 2022-06-12 22:48:11,592 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,594 BaseClass.user_does_not_enter_any_value_in_email_field_from_sheetname() - User leaves email as empty
+[INFO ] 2022-06-12 22:48:11,676 BaseClass.unable_to_enter_and_show_error_message() - Please enter Email
+[INFO ] 2022-06-12 22:48:11,690 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,692 BaseClass.user_entered_not_supported_data_format_in_email_field_from_sheetname() - User enter invalid email format
+[INFO ] 2022-06-12 22:48:11,693 BaseClass.unable_to_enter_and_show_error_message() - Invalid email format
+[INFO ] 2022-06-12 22:48:11,708 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,708 BaseClass.user_attempts_to_put_characters_in_phone_number_field_from_sheetname() - User enter character in phone no field
+[INFO ] 2022-06-12 22:48:11,709 BaseClass.unable_to_enter_and_show_error_message() - Only Numeric values are allowed
+[INFO ] 2022-06-12 22:48:11,723 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,725 BaseClass.user_attempts_to_submit_the_form_without_filling_up_phone_number_field_from_sheetname() - User leaves phone no as empty
+[INFO ] 2022-06-12 22:48:11,804 BaseClass.unable_to_enter_and_show_error_message() - Please enter Phone number
+[INFO ] 2022-06-12 22:48:11,817 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,818 BaseClass.user_fills_up_the_form_with_valid_data_inputs_from_sheetname() - User enter valid data inside all fields in the form
+[INFO ] 2022-06-12 22:48:11,914 BaseClass.user_can_see_button() - Update Button dispalyed
+[INFO ] 2022-06-12 22:48:11,923 BaseClass.user_is_on_the_add_new_patient_page() - User is on Add new patient page
+[INFO ] 2022-06-12 22:48:11,924 BaseClass.user_clicks_on_the_add_new_patient_button_after_entering_valid_patient_data() - User click update button after entering field values
+[INFO ] 2022-06-12 22:48:11,925 BaseClass.user_lands_on_my_patients_page_with_the_details_displayed() - User redirected to New Patient page
