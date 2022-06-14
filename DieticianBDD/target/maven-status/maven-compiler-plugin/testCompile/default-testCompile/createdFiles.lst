@@ -1,0 +1,12 @@
+com\dietician\utilities\ExcelReader.class
+com\dietician\stepDefinitions\DieticianHome.class
+com\dietician\stepDefinitions\AddNewPatient.class
+com\dietician\stepDefinitions\SignInWithEmail.class
+com\dietician\pageObjects\AddNewPatientPage.class
+com\dietician\base\BaseClass.class
+com\dietician\pageObjects\DieticianHomePage.class
+com\dietician\stepDefinitions\SignInPageTitle.class
+com\dietician\utilities\ReadConfig.class
+com\dietician\pageObjects\SignInPage.class
+com\dietician\stepDefinitions\SignInWithUserName.class
+com\dietician\runner\TestRunner.class

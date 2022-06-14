@@ -1,141 +1,321 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="23" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="23" time="0.929">
-<testcase classname="Sign In page mandatory fields" name="Validating the Sign In page mandatory fields" time="0.179">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........undefined
-When User is on Sign In Page "Sign In"......................................skipped
-Then User should see all mandatory flields with star symbol on top of those fields.skipped
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="53" time="6.563">
+<testcase classname="Add New Patient Page" name="Add New Patient Details" time="1.307">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User wants to enter New Patient details................................passed
+Then Patient Data From is visible...........................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Page Title" name="Validating the title of Sign In Page" time="0.004">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........undefined
-When User click on icon symbol on Sign In Page..............................skipped
-Then User should see the title of the page as "Sign In".....................skipped
-]]></failure>
+<testcase classname="Add New Patient Page" name="Empty Form submission For Add New Patient Details" time="2.017">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to submit the form without filling up mandatory fields from sheetname "EmptyData".passed
+Then Unable to update and display "Please fillup all the mandatory fields" error message.passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating the heading on &quot;Log in with your email&quot; form" time="0.023">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Dietician website..........................................undefined
-When User lands on Sign In page.............................................skipped
-Then User should see a form with heading "Log in with your email"...........skipped
-]]></failure>
+<testcase classname="Add New Patient Page" name="Full Name Field Numeric Value Validation" time="0.16">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to put numeric value in Full Name field from sheetname "FullNameInt".passed
+Then Unable to enter and show "Only characters are allowed" error message...passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Login button on &quot;Log in with  your email&quot; form" time="0.003">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Dietician website..........................................undefined
-When User lands on Sign In page.............................................skipped
-Then User should see a button with text "Log in" in the Sign In form........skipped
-]]></failure>
+<testcase classname="Add New Patient Page" name="Full Name Field Space Validation" time="0.143">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User does not put space in between  First Name and Last Name for Full Name field from sheetname "FullNameNoSpace".passed
+Then Unable to enter and show "First and Last Name should have space in between" error message.passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Email and password empty" time="0.003">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Log In button with all fields empty........................skipped
-Then User gets  error message " Please fill out fields in textbox"..........skipped
-]]></failure>
+<testcase classname="Add New Patient Page" name="Full Name Field Empty Value Validation" time="0.121">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to submit the form without filling up Full Name field from sheetname "FullNameEmpty".passed
+Then Unable to enter and show "Please enter Full Name" error message........passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with invalid email and valid password" time="0.006">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Log In button with invalid email and valid password........skipped
-Then User should see message "Please fill with valid email id"..............skipped
-]]></failure>
+<testcase classname="Add New Patient Page" name="Addess line 1 Field Empty Value Validation" time="0.166">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User does not enter any value in Addess linel field from sheetname "AddessLineEmpty".passed
+Then Unable to enter and show "Please enter Addess line 1" error message....passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with valid email and invalid password" time="0.005">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Log In button with valid email and invalid password........skipped
-Then User gets a message "Invalid Password.Pleasetry again".................skipped
-]]></failure>
+<testcase classname="Add New Patient Page" name="Country Field Empty Value Validation" time="0.119">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User submit the form without selecting any value for Country field from sheetname "CountryEmpty".passed
+Then Unable to enter and show "Please select Country from dropdown" error message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="City Field Numeric Value Validation" time="0.176">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to put numeric value in City field from sheetname "Cityint".passed
+Then Unable to enter and show "Only characters are allowed" error message...passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="City Field Empty Value Validation" time="0.099">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to submit the form without filling up City field from sheetname "CityEmpty".passed
+Then Unable to enter and show "Please enter City" error message.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="State, province or region Field Numeric Value Validation" time="0.091">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to put numeric value in State, province or region field from sheetname "StateInt".passed
+Then Unable to enter and show "Only characters are allowed" error message...passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="State, province or region Field Empty Value Validation" time="0.092">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to submit the form without filling up State, province or region field from sheetname "StateEmpty".passed
+Then Unable to enter and show "Please enter State, province or region" error message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Postal code Field Empty Value Validation" time="0.081">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to submit the form without filling up Postal code field from sheetname "PostalCodeEmpty".passed
+Then Unable to enter and show "Please enter Postal code" error message......passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Postal code Field Wrong Data Fomat Validation" time="0.082">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User entered not supported data format in Postal code field from sheetname "PostalCodeInvalid".passed
+Then Unable to enter and show "Invalid Postal code format" error message....passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Email Field Empty Value Validation" time="0.116">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User does not enter any value in Email field from sheetname "EmailFieldEmpty".passed
+Then Unable to enter and show "Please enter Email" error message............passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Email Field Wrong Data Fomat Validation" time="0.02">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User entered not supported data format in Email field from sheetname "EmailFieldWrongFormat".passed
+Then Unable to enter and show "Invalid email format" error message..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Phone number Field Character Value Validation" time="0.014">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to put characters in Phone number field from sheetname "PhoneNoInvalid".passed
+Then Unable to enter and show "Only Numeric values are allowed" error message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Phone number Field Empty Value Validation" time="0.115">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User attempts to submit the form without filling up Phone number field from sheetname "PhoneNoEmpty".passed
+Then Unable to enter and show "Please enter Phone number" error message.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Inserting Valid New Patient data submission" time="0.104">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User fills up the form with Valid Data Inputs from sheetname "ValidData".passed
+Then User can see "Update" button...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Patient Page" name="Valid New Patient data submission" time="0.009">
+<system-out><![CDATA[Given User is on the Add New Patient Page "https://DieticianWebsite.com/Add New Patient".passed
+When User clicks on the Add New Patient button after entering valid Patient data "ValidData".passed
+Then User lands on My Patients page with the "New Patient" details displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify Dietician Home Page After Login" time="0.024">
+<system-out><![CDATA[Given User is on the Dietician website "https://DieticianWebsite.com".......passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can see the Home tab on header menu...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify New Patient Page After Login" time="0.121">
+<system-out><![CDATA[Given User is on the Dietician website "https://DieticianWebsite.com".......passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can see the New Patient tab from the header menu..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify My Patient Page After Login" time="0.007">
+<system-out><![CDATA[Given User is on the Dietician website "https://DieticianWebsite.com".......passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can see the My Patient tab from the header menu...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify Diet Plans Page After Login" time="0.007">
+<system-out><![CDATA[Given User is on the Dietician website "https://DieticianWebsite.com".......passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can see the Diet Plans tab from the header menu...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Clicking New Patient menu After Login" time="0.007">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User selects New patient tab...........................................passed
+Then User lands on New Patient page "Add New Patient".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Clicking My patient menu After Login" time="0.006">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User selects My Patient tab............................................passed
+Then User lands on My Patient page "My Patients"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Clicking Diet Plans menu After Login" time="0.012">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User selects Diet Plans tab............................................passed
+Then User lands on Diet Plans page "View Recent Diets"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify Dietician Home Page Side Bar After Login" time="0.007">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can see Banner or Announcements section in right side bar.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Dietician Home Page Dietician name verification After Login" time="0.004">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can see Logged in as "<Dietician name>" message in top of right side bar.passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify Dietician Home Page image and Content After Login" time="0.003">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User logged in successfully to the Dietician website "Dietician Home"..passed
+Then User can read Dietician Home page image and content....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dietician Home Page" name="Verify Dietician Home Page Ssign out btn After Login" time="0.003">
+<system-out><![CDATA[Given User is on the Dietician Home page "https://DieticianWebsite.com/Dietician Home".passed
+When User can see "SIGN OUT" button after successful login..................passed
+Then User can click on "SIGN OUT" button for logging off successfully.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Sign In page mandatory fields" name="Validating the Sign In page mandatory fields" time="0.008">
+<system-out><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........passed
+When User is on Sign In Page "Sign In"......................................passed
+Then User should see all mandatory flields with star symbol on top of those fields.passed
+]]></system-out>
+</testcase>
+<testcase classname="Sign In Page Title" name="Validating the title of Sign In Page" time="0.011">
+<system-out><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........passed
+When User click on icon symbol on Sign In Page..............................passed
+Then User should see the title of the page as "User Sign In"................passed
+]]></system-out>
+</testcase>
+<testcase classname="Log in with email on Sign In Form" name="Validating the heading on Log in with your email form" time="0.011">
+<system-out><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........passed
+When User lands on Sign In page "User Sign In"..............................passed
+Then User redirected to form with heading "Log in with your email"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Log in with email on Sign In Form" name="Validating Login button on Log in with your email form" time="0.014">
+<system-out><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........passed
+When User lands on Sign In page "User Sign in"..............................passed
+Then User should see a button with text "Log in" in the Sign In form........passed
+]]></system-out>
+</testcase>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Email and password empty" time="0.008">
+<system-out><![CDATA[Given User is on Sign In Page "User Sign in"................................passed
+When User clicks Log In button with all fields empty........................passed
+Then User gets error message "Please fill out fields in textbox"............passed
+]]></system-out>
+</testcase>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with invalid email and valid password" time="0.016">
+<system-out><![CDATA[Given User is on Sign In Page "User Sign in"................................passed
+When User clicks Log In button with invalid email and valid password........passed
+Then User should see message "Please fill with valid email id"..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with valid email and invalid password" time="0.032">
+<system-out><![CDATA[Given User is on Sign In Page "User Sign in"................................passed
+When User clicks Log In button with valid email and invalid password........passed
+Then User gets a message "Invalid Password.Pleasetry again".................passed
+]]></system-out>
 </testcase>
 <testcase classname="Log in with email on Sign In Form" name="Validating Sign In with valid email and empty password field" time="0.006">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Log In button with valid email and empty password..........skipped
-Then User gets a message "Please fill the password".........................skipped
-]]></failure>
+<system-out><![CDATA[Given User is on Sign In Page "User Sign in"................................passed
+When User clicks Log In button with valid email and empty password..........passed
+Then User gets a message "Please fill the password".........................passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with both invalid email and password" time="0.002">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Log In with both invalid email and password................skipped
-Then User gets error message message "Invalid Login credentials"............skipped
-]]></failure>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with both invalid email and password" time="0.005">
+<system-out><![CDATA[Given User is on Sign In Page "User Sign in"................................passed
+When User clicks Log In with both invalid email and password................passed
+Then User gets a message "Invalid Login credentials"........................passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with both valid email and password" time="0.004">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Log In with both valid email and password..................skipped
-Then User gets a message"logged in successfully"and sees signout button.....skipped
-]]></failure>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with both valid email and password" time="0.014">
+<system-out><![CDATA[Given User is on Sign In Page "User Sign in"................................passed
+When User clicks Log In with both valid email and password..................passed
+Then User gets a message "logged in successfully"...........................passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with &quot;Forgot your password&quot;" time="0.006">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks on Forgot Password button..................................skipped
-Then User is redirected to reset password link..............................skipped
-]]></failure>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Forgot your password link" time="0.01">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks on Forgot Password link....................................passed
+Then User should be directed to "Reset password" page.......................passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Facebook button" time="0.004">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks"Facebook" button to log in.................................skipped
-Then User is redirected to Facebook  login Page.............................skipped
-]]></failure>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Facebook button" time="0.008">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks "Facebook" button to log in................................passed
+Then User is redirected to Facebook login Page..............................passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Google button" time="0.003">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks "Google"button to log in...................................skipped
-Then User is redirected to Google logIn page................................skipped
-]]></failure>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with Google button" time="0.013">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks "Google" button to log in..................................passed
+Then User is redirected to Google logIn page................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with SignUp button" time="0.004">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks sign up link...............................................skipped
-Then User is redirected to Register Page....................................skipped
-]]></failure>
+<testcase classname="Log in with email on Sign In Form" name="Validating Sign In with SignUp button" time="0.01">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks sign up link...............................................passed
+Then User is redirected to Register Page....................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating the Sign In form heading" time="0.018">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Dietician website..........................................undefined
-When User lands on Sign In page.............................................skipped
-Then User should see a form with heading "User Sign In".....................skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating the Sign In form heading" time="0.019">
+<system-out><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........passed
+When User lands on Sign In page "User Sign In"..............................passed
+Then User should see a form with heading "SIgn In"..........................passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In button" time="0.002">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Dietician website..........................................undefined
-When User lands on Sign In page.............................................skipped
-Then User should see a button with text "SIGN IN"...........................skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In button" time="0.005">
+<system-out><![CDATA[Given User is on Dietician website "https://DieticianWebsite.com"...........passed
+When User lands on Sign In page "User Sign In"..............................passed
+Then User should see a button with text "SIGN IN"...........................passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In Process with all fields empty" time="0.002">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Sign In button in the Sign In form with all fields empty...skipped
-Then User should get error message "Please fill out the fields".............skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In Process with all fields empty" time="0.007">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks Sign In button in the Sign In form with all fields empty...passed
+Then User should get error message "Username and Password is invalid".......passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign InProcess with invalid FirstName" time="0.002">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Sign In button entering numeric values for Username and valid values for password.skipped
-Then User should get a message Invalid entry for first field................skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign InProcess with invalid FirstName" time="0.011">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks Sign In button entering numeric values for Username "1234" and valid values for password "SAWE!@R".passed
+Then User should get a message Invalid entry for first field "Username and Password is invalid".passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In process with invalid password" time="0.001">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Sign In button entering extra length of password...........skipped
-Then User should get a message Invalid entry for password field.............skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In process with invalid password" time="0.014">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks Sign In button entering extra length of password "12345678901234567890".passed
+Then User should get a message Invalid entry for password field "Username and Password is invalid".passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In with both invalid username and password" time="0.001">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Sign In button entering invalid values for both fields.....skipped
-Then User should get error message "Invalid login credentials"..............skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In with both invalid username and password" time="0.008">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks Sign In button entering invalid values for both fields "user001" and "password".passed
+Then User should get error message "Username and Password is invalid".......passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In with &quot;Forgot password&quot; button" time="0.001">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks on Forgot Password button..................................skipped
-Then User should be directed to "Reset password" link.......................skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In with Forgot password button" time="0.012">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks on Forgot Password link....................................passed
+Then User should be directed to "Reset password" page.......................passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In with Not member Yet button" time="0.002">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks on "not member yet "button.................................skipped
-Then User will land on Register Page........................................skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In with Not member Yet button" time="0.007">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks on not member yet button...................................passed
+Then User will land on Register Page........................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Sign In Form with Username" name="Validating Sign In with all fields valid entry" time="0.002">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Sign In Page...............................................undefined
-When User clicks Sign In with all field entered.............................skipped
-Then User logged in successfully............................................skipped
-]]></failure>
+<testcase classname="Sign In Form with Username" name="Validating Sign In with all fields valid entry" time="0.012">
+<system-out><![CDATA[Given User is on Sign In Page "Sign In".....................................passed
+When User clicks Sign In with all field entered "validuser" and "validpassword".passed
+Then User logged in successfully............................................passed
+]]></system-out>
 </testcase>
 </testsuite>
