@@ -40,8 +40,8 @@ public class SignInPageTitle extends BaseClass {
 		}
 	}
 
-	@Then("User should see the title of the page as {string}")
-	public void user_should_see_the_title_of_the_page_as(String pageTitle) {
+	@Then("User should see the title in page as {string}")
+	public void user_should_see_the_title_in_page_as(String pageTitle) {
 		logger.info("Verify signin page title");
 		verifyPageTitle(pageTitle);
 	}
