@@ -20,6 +20,8 @@ public class ReadConfig {
 		
 	}
 	
+	public static final String EXCEL ="src/test/resources/Hackathon.xlsx";
+	
 	//Read data from config file
 	
 	public String getApplicationURL() {
@@ -37,5 +39,4 @@ public class ReadConfig {
 	public String getAddNewPatientUrl() {
 		return prop.getProperty("addnewpatienturl");
 	}
-
 }
