@@ -24,5 +24,5 @@ Feature: Upload button on Create Plan page
   Scenario: Validating the Upload functionality with correct file format and size
     Given User is on "Confirm conditions and Create Plan" page
     When User clicks the Upload button by selecting a pdf file of size less than 2MB
-    Then User should see a message "File uploaded succesfully"
+    Then User should see an message "File uploaded succesfully"
     

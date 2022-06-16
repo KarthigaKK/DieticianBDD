@@ -23,4 +23,4 @@ Feature: Title of the Home page
   Scenario: Validating the title of the Home page
     Given User is on the browser
     When User opens the Dietician Website "https://DieticianWebsite.com"
-    Then User should see the title of the page as "Home"
+    Then User should see the title of the page "Home"

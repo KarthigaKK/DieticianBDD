@@ -15,8 +15,8 @@ public class HomePageTitle extends BaseClass{
 	HomePage Home = new HomePage(driver);
 	
 
-	@Then("User should see the title of the page as {string}")
-	public void user_should_see_the_title_of_the_page_as(String HomeTitle) {
+	@Then("User should see the title of the page {string}")
+	public void user_should_see_the_title_of_the_page(String HomeTitle) {
 		
 		String title = Home.getHomePageTitle();
 	    if (title == HomeTitle)

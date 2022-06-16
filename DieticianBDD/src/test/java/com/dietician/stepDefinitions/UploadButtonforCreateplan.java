@@ -78,8 +78,8 @@ public class UploadButtonforCreateplan extends BaseClass {
 		logger.info("Uploading PDF file of size less than 2MB");
 	}
 
-	@Then("User should see a message {string}")
-	public void user_should_see_a_message(String message) {
+	@Then("User should see an message {string}")
+	public void user_should_see_an_message(String message) {
 		logger.info("File uploaded succesfully");
 		logger.info(message);
 	}
